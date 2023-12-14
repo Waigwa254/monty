@@ -50,14 +50,15 @@ unsigned int _abs(int i)
 
 /**
  * get_numbase_len - gets l
- * @num: number 
+ * @num: number
  * @base: base
  *
  * Return: int
  */
 int get_numbase_len(unsigned int num, unsigned int base)
 {
-	int len = 1; 
+	int len = 1;
+
 	while (num > base - 1)
 	{
 		len++;
