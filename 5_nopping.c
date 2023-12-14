@@ -1,4 +1,4 @@
-#include "monty.c"
+#include "monty.h"
 
 /**
  * nopper - noppper

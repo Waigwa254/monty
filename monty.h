@@ -53,5 +53,7 @@ int pint_error(unsigned int line_number);
 int short_stack_error(unsigned int line_number, char *op);
 
 void set_op_tok_error(int error_code);
+unsigned int token_arr_len(void);
+char *get_int(int num);
 #endif
 
