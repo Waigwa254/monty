@@ -61,5 +61,10 @@ void set_op_tok_error(int error_code);
 unsigned int token_arr_len(void);
 char *get_int(int num);
 int run_monty(FILE *script_fd);
+int usage_error(void);
+int f_open_error(char *filename);
+int get_numbase_len(unsigned int num, unsigned int base);
+void fill_numbase_buff(unsigned int num, unsigned int base,
+			char *buff, int buff_size);
 #endif
 
