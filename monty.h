@@ -1,6 +1,11 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -38,5 +43,15 @@ int check_mode(stack_t *stack);
 int malloc_error(void);
 int no_int_error(unsigned int line_number);
 
+void monty_push(stack_t **stack, unsigned int line_number);
+void monty_pall(stack_t **stack, unsigned int line_number);
+void monty_pint(stack_t **stack, unsigned int line_number);
+void monty_pop(stack_t **stack, unsigned int line_number);
+
+int pop_error(unsigned int line_number);
+int pint_error(unsigned int line_number);
+int short_stack_error(unsigned int line_number, char *op);
+
+void set_op_tok_error(int error_code);
 #endif
 
