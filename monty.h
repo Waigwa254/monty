@@ -6,7 +6,7 @@
 #define DELIMS " \n\t\a\b"
 
 extern char **op_toks;
-
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
