@@ -9,7 +9,7 @@ void monty_swap(stack_t **stack, unsigned int line_number);
 /**
  * monty_push - t lin
  * @stack: ist.
- * @line_number: Te 
+ * @line_number: Te
  */
 void monty_push(stack_t **stack, unsigned int line_number)
 {
@@ -42,8 +42,8 @@ void monty_push(stack_t **stack, unsigned int line_number)
 	new->n = atoi(op_toks[1]);
 
 	if (check_mode(*stack) == STACK)
-	{	
-	        tmp = (*stack)->next;
+	{
+		tmp = (*stack)->next;
 		new->prev = *stack;
 		new->next = tmp;
 		if (tmp)
