@@ -1,6 +1,11 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define STACK 0
+#define QUEUE 1
+#define DELIMS " \n\t\a\b"
+
+extern char **op_toks;
 
 #include <stdio.h>
 #include <stdlib.h>
