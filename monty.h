@@ -60,5 +60,6 @@ unsigned int _abs(int i);
 void set_op_tok_error(int error_code);
 unsigned int token_arr_len(void);
 char *get_int(int num);
+int run_monty(FILE *script_fd);
 #endif
 
