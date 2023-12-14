@@ -56,7 +56,7 @@ void monty_pop(stack_t **stack, unsigned int line_number);
 int pop_error(unsigned int line_number);
 int pint_error(unsigned int line_number);
 int short_stack_error(unsigned int line_number, char *op);
-
+unsigned int _abs(int i);
 void set_op_tok_error(int error_code);
 unsigned int token_arr_len(void);
 char *get_int(int num);
