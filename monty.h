@@ -66,5 +66,8 @@ int f_open_error(char *filename);
 int get_numbase_len(unsigned int num, unsigned int base);
 void fill_numbase_buff(unsigned int num, unsigned int base,
 			char *buff, int buff_size);
+void free_tokens(void);
+void (*get_op_func(char *opcode))(stack_t**, unsigned int);
+int init_stack(stack_t **stack);
 #endif
 
